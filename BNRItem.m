@@ -64,4 +64,9 @@
     return [self initWithItemName:@"Item"];
 }
 
+- (void)dealloc
+{
+    NSLog(@"Destroyed: %@", self);
+}
+
 @end
