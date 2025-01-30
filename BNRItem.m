@@ -69,4 +69,11 @@
     NSLog(@"Destroyed: %@", self);
 }
 
+- (void)setContainedItem:(BNRItem *)containedItem
+{
+    _containedItem = containedItem;
+    
+    containedItem.container = self;
+}
+
 @end

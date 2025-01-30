@@ -12,11 +12,15 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSMutableArray *items = [NSMutableArray array];
         
-        for (int i = 0; i < 10; i++) {
-            BNRItem *randomItem = [BNRItem randomItem];
-            
-            [items addObject:randomItem];
-        }
+        BNRItem *backpack = [[BNRItem alloc] initWithItemName:@"Backpack"];
+        BNRItem *calculator = [[BNRItem alloc] initWithItemName:@"Calculator"];
+        
+        [items addObjectsFromArray:@[backpack, calculator]];
+        
+        backpack.containedItem = calculator;
+        
+        backpack = nil;
+        calculator = nil;
         
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
