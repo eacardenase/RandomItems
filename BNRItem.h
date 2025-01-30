@@ -11,11 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BNRItem : NSObject
 
-@property (nonatomic) NSString *itemName;
-@property (nonatomic) NSString *serialNumber;
+@property (nonatomic, copy) NSString *itemName;
+@property (nonatomic, copy) NSString *serialNumber;
 @property (nonatomic) int valueInDollars;
-@property (nonatomic, readonly) NSDate *dateCreated;
-@property (nonatomic) BNRItem *containedItem;
+@property (nonatomic, readonly, strong) NSDate *dateCreated;
+@property (nonatomic, strong) BNRItem *containedItem;
 @property (nonatomic, weak) BNRItem *container;
 
 // Convenience method
