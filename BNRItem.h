@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) int valueInDollars;
 @property (nonatomic, readonly) NSDate *dateCreated;
 
+// Convenience method
++ (instancetype)randomItem;
+
 // Designated initializer for BNRItem
 - (instancetype)initWithItemName:(NSString *)name
                   valueInDollars:(int)value
