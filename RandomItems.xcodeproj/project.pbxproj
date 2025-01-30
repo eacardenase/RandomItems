@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A52080392D49AB73002C028C /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A52080382D49AB73002C028C /* BNRItem.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A520802A2D49A5EA002C028C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,6 +25,8 @@
 /* Begin PBXFileReference section */
 		A520802C2D49A5EA002C028C /* RandomItems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomItems; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52080362D49A5F6002C028C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A52080372D49AB73002C028C /* BNRItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		A52080382D49AB73002C028C /* BNRItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +51,8 @@
 		A52080232D49A5EA002C028C = {
 			isa = PBXGroup;
 			children = (
+				A52080372D49AB73002C028C /* BNRItem.h */,
+				A52080382D49AB73002C028C /* BNRItem.m */,
 				A52080362D49A5F6002C028C /* README.md */,
 				A520802E2D49A5EA002C028C /* RandomItems */,
 				A520802D2D49A5EA002C028C /* Products */,
@@ -122,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52080392D49AB73002C028C /* BNRItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
